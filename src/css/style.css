@@ -1,0 +1,63 @@
+#background-server{
+    background-image: url('/src/imagen/background-server.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login-background{
+    background: rgba(256, 256, 256, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    border: 1px solid #ffffff;
+    height: 500px;
+    width: 250px;
+    padding: 20px;
+}
+
+h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+input{
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+    width: 98%;
+    outline: none;
+}
+
+#login-button{
+    border-radius: 20px;
+    padding: 8px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#social-media{
+    margin: 20px;
+    text-align: center;
+}
+
+#social-media a{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+#social-media a:hover{
+    color: #646464;
+}
