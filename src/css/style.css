@@ -1,63 +1,75 @@
-#background-server{
-    background-image: url('/src/image/background-server.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#background-server {
+  background-image: url("../image/background-server.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#login-background{
-    background: rgba(256, 256, 256, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 18px;
-    border: 1px solid #ffffff;
-    height: 500px;
-    width: 250px;
-    padding: 20px;
+#login-background {
+  background: rgba(256, 256, 256, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  border: 1px solid #ffffff;
+  max-height: 800px;
+  width: 250px;
+  padding: 20px;
+  overflow: auto;
 }
 
-h2{
-    color: #ffffff;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
+h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
 }
 
-input{
-    background: transparent;
-    color: #ffffff;
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    font-size: 14px;
-    margin-bottom: 20px;
-    width: 98%;
-    outline: none;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-#login-button{
-    border-radius: 20px;
-    padding: 8px 20px;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 700;
+input {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 14px;
+  width: 98%;
+  outline: none;
 }
 
-#social-media{
-    margin: 20px;
-    text-align: center;
+#login-button {
+  border-radius: 20px;
+  padding: 8px 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-#social-media a{
-    color: #ffffff;
-    font-size: 25px;
-    margin: 0 10px;
-    transition: 0.3s;
+#social-media {
+  margin: 20px;
+  text-align: center;
 }
 
-#social-media a:hover{
-    color: #646464;
+#social-media a {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+#social-media a:hover {
+  color: #646464;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+  color: #ff0000;
 }
