@@ -10,13 +10,13 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#login-background {
+#home-background {
   background: rgba(256, 256, 256, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 18px;
   border: 1px solid #ffffff;
   max-height: 800px;
-  width: 250px;
+  width: 700px;
   padding: 20px;
   overflow: auto;
 }
@@ -25,78 +25,52 @@ h2 {
   color: #ffffff;
   text-align: center;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-form {
+#image-servidor {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
-label {
+#image-servidor img {
+  width: 50%;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
   color: #ffffff;
 }
 
-input {
-  background: transparent;
-  color: #ffffff;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  font-size: 14px;
-  width: 98%;
-  outline: none;
+#text-center{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
 }
 
-#login-button {
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-button {
   border-radius: 20px;
   padding: 8px 20px;
   width: 100%;
   font-size: 16px;
   font-weight: 700;
+  margin: 20px;
+  cursor: pointer;
+  
 }
 
-#login-button:hover{
+#home-button:hover{
  background-color: #20b1ff;
  transition: 0.3s ease;
-}
-
-#social-media {
-  margin: 20px;
-  text-align: center;
-}
-
-#social-media a {
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 10px;
-  transition: 0.3s;
-}
-
-#social-media a:hover {
-  color: #646464;
-}
-
-p {
-  margin: 0;
-  font-size: 12px;
-  color: #ff0000;
-}
-
-#btn-voltar img {
-  display: block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-#btn-voltar img {
-  width: 30px;
-  height: 30px;
 }
 
 @media (max-width: 600px) {
