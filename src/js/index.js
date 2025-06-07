@@ -3,7 +3,7 @@ function getElementValueById(id) {
   return input.value;
 }
 
-function setInputError(id, text) {
+function setInputErrorById(id, text) {
   const inputError = document.getElementById(id);
 
   if (inputError) {
@@ -15,7 +15,7 @@ function validateInput(elementId, elementErrorId, textError) {
   const inputValue = getElementValueById(elementId);
 
   if (inputValue === undefined || inputValue === null || inputValue === "") {
-    setInputError(elementErrorId, textError);
+    setInputErrorById(elementErrorId, textError);
   }
 }
 

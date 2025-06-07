@@ -1,0 +1,21 @@
+Lê o código passo a passo e anotar o passo no Notepad++ ou Scalidraw
+
+const incremetar = (value) => {
+const element = document.querySelector("p");
+const elementNumber = parseInt(element.textContent);
+element.textContent = elementNumber + value;
+}
+
+const soma = () => {
+incremetar(1);
+}
+
+const diminuir = () => {
+incremetar(-1);
+}
+
+const button1 = document.getElementById("button-1");
+button1.addEventListener("click", soma);
+
+const button2 = document.getElementById("button-2");
+button2.addEventListener("click", diminuir);

@@ -1,0 +1,60 @@
+-HTML
+
+<input id="value-a" placeholder="Digite o primeiro valor: "/>
+<input id="value-b" placeholder="Digite o segundo valor: "/>
+<br>
+<br>
+<button id="soma">Soma</button> 
+<button id="diminuir">Diminuir</button> 
+<button id="multiplicar">Multiplicar</button> 
+<button id="dividir">Dividir</button> 
+
+<p>0</p>
+
+-JavaScript
+
+const getInputValue = (inputId) => {
+	const input = document.getElementById(inputId)
+  
+  if (input) {
+  	return parseInt(input.value);
+  } else {
+  	return 0
+  }
+}
+
+const sum = () => {
+	const valueA = getInputValue("value-a");
+  const valueB = getInputValue("value-b");
+	console.log("Esta soma é: ")
+}
+
+const decrease = () => {
+	const valueA = getInputValue("value-a");
+  const valueB = getInputValue("value-b");
+	console.log("Esta subitração é: ")
+}
+
+const multiply = () => {
+	const valueA = getInputValue("value-a");
+  const valueB = getInputValue("value-b");
+	console.log("Esta multiplicação é: ")
+}
+
+const divide = () => {
+	const valueA = getInputValue("value-a");
+  const valueB = getInputValue("value-b");
+	console.log("Esta divisão é: ")
+}
+
+const buttonSum = document.getElementById("soma");
+buttonSum.addEventListener("click", sum);
+
+const buttonDecrease = document.getElementById("diminuir");
+ buttonDecrease.addEventListener("click", decrease);
+ 
+const buttonMultiply = document.getElementById("multiplicar");
+ buttonMultiply.addEventListener("click", multiply);
+
+const buttonDivide = document.getElementById("dividir");
+ buttonDivide.addEventListener("click", divide);
